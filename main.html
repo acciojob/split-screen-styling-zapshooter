@@ -1,9 +1,74 @@
-<nav>Nav</nav>
-<main>
-  <header>Header</header>
-  <section class="content">
-    <article>Article</article>
-    <aside>Aside</aside>
-  </section>
-  <footer>Footer</footer>
-</main>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+      }
+
+      nav {
+        background-color: #D7E8D4;
+        width: calc(100vw / 6);
+        padding: 1em;
+        flex-shrink: 0;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      header {
+        background-color: yellowgreen;
+        height: 20vh;
+        padding: 1em;
+        flex-shrink: 0;
+      }
+
+      .content {
+        display: flex;
+        flex: 1;
+      }
+
+      article {
+        flex: 3;
+        min-height: 60vh;
+        padding: 1em;
+      }
+
+      aside {
+        background-color: beige;
+        flex: 1;
+        padding: 1em;
+      }
+
+      footer {
+        background-color: yellowgreen;
+        height: 20vh;
+        padding: 1em;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <main>
+      <header>Header</header>
+      <section class="content">
+        <article>Article</article>
+        <aside>Aside</aside>
+      </section>
+      <footer>Footer</footer>
+    </main>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
